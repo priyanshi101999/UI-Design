@@ -1,0 +1,489 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 56px 20px 56px;
+    align-items: center;
+    background-color: white;
+}
+
+nav .nav_left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav .logo {
+    width: 120px;
+    object-fit: contain;
+
+}
+
+nav .nav_left h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+nav p {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+nav p span {
+    color: orangered;
+
+}
+
+nav .nav_right {
+    display: block;
+}
+
+nav .icons {
+    display: flex;
+    align-items: center;
+}
+
+nav .fas {
+    color: grey;
+    font-size: 24px;
+    padding: 8px;
+}
+
+nav .fa-user-circle {
+    font-size: 32px;
+}
+
+.main {
+    background-color: #edecec;
+    padding: 20px 56px 56px 56px;
+}
+
+.main .form_title {
+    display: flex;
+    gap: 500px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form_title p {
+    font-weight: lighter;
+    color: black;
+    font-size: 32px;
+}
+
+
+/* Basic styling for the progress Bar container */
+.progressBar {
+    text-align: center;
+    margin: 0;
+}
+
+/* Styling for the step labels */
+.step-label {
+    display: inline-block;
+    margin: 0 30px 12px 20px;
+    font-size: 16px;
+}
+
+/* Styling for the progress bar container */
+.progress-1 {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    height: 4px;
+    width: 56px;
+    background-color: orangered;
+    border-radius: 10px;
+    position: relative;
+}
+
+.remaining {
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 73px;
+    width: calc(660% - 0.33%);
+}
+
+/* Styling for the completed dots */
+.dot.completed {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: orangered;
+    /* Orange color for the completed dots */
+    left: 56px;
+    position: absolute;
+    top: -6px;
+    border: 3px solid #edecec;
+}
+
+.dot_incomplete1 {
+    position: absolute;
+    top: -6px;
+    border: 3px solid #edecec;
+    left: 200px;
+    background-color: #ddd;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+
+}
+
+.dot_incomplete2 {
+    position: absolute;
+    top: -6px;
+    border: 3px solid #edecec;
+    left: 350px;
+    background-color: #ddd;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+
+}
+
+.main .main_container {
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+}
+
+
+.main_container .image_container {
+    position: relative;
+}
+
+.main_container .image_container img {
+    height: 100%;
+    width: 500px;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 28, 28, 0.7);
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* Increase the blur radius to 30px */
+    border-radius: 10px;
+
+}
+
+.image-text h2 {
+    color: white;
+
+}
+
+.image-text p {
+    color: white;
+
+}
+
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.form_container p {
+    margin: 0;
+}
+
+.form_container p {
+    margin: 4px;
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+}
+
+
+.profile_image {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #edecec;
+    margin-top: 32px;
+    border: 1px solid grey;
+}
+
+.user-profile {
+    position: relative;
+    position: relative;
+    top: 28px;
+    left: 31px;
+    font-size: 40px;
+    color: grey;
+}
+
+.upload_image {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.upload_image p {
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+
+.upload_image p span {
+    font-weight: 400;
+}
+
+form {
+    margin: 20px 0;
+}
+
+.job_title {
+    border: 2px solid orangered;
+}
+
+.form-label {
+    margin-bottom: 1px;
+}
+
+.form-select {
+    background-color: #edecec;
+    border: 2px solid black;
+    text-align: center;
+    background-position: right 6.75rem center;
+
+}
+
+.experience {
+    border: 2px solid black;
+}
+
+
+.btn1 {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    text-align: left;
+    width: 86px;
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+}
+
+.toggle {
+    position: absolute;
+    border: 3px solid #edecec;
+    margin: 0px;
+    background-color: orangered;
+    height: 38px;
+    width: 37px;
+    border-radius: 50%;
+
+}
+
+.hide {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.btn2 {
+    background-color: rgba(255, 68, 0, 0.43);
+    color: white;
+    width: 50%;
+
+}
+
+.toggle-btn {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-btn input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s ease;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+
+
+input:checked+.slider {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+    background-color: orangered;
+
+}
+
+.fa-bars {
+    display: none;
+}
+
+
+/* for size maximum size 575px */
+@media (max-width: 576px) {
+    .fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        padding: 20px 20px 20px 20px;
+    }
+
+    nav .nav_right {
+        display: none;
+    }
+
+    .main {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .main .form_title {
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .dot.completed {
+        left: 36px;
+    }
+
+    .dot_incomplete1 {
+        left: 150px;
+    }
+
+    .dot_incomplete2 {
+        left: 258px;
+    }
+
+
+    .main .main_container {
+        flex-direction: column;
+    }
+
+    .main_container .image_container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main .form_title {
+        display: flex;
+        /* justify-content: 
+    space-between; */
+        gap: 2px;
+        margin-bottom: 20px;
+        justify-content: left;
+    }
+
+    .form_title p {
+        align-self: flex-start;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .progressBar {
+        margin-bottom: 8px;
+    }
+
+    .progress-1 {
+
+        width: 36px;
+
+    }
+
+    .step-label {
+        display: inline-block;
+        margin: 0 12px 8px 12px;
+        font-size: 14px;
+    }
+
+    .remaining {
+
+        left: 53px;
+        width: calc(720% - 0.33%);
+    }
+
+    .form_container {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .form_container h1 {
+        margin: 0;
+        color: black;
+        font-size: 20px;
+    }
+
+    .upload_image {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .profile_image {
+        height: 50px;
+        width: 50px;
+        margin: 0;
+    }
+
+    .user-profile {
+
+        top: 14px;
+        left: 14px;
+        font-size: 20px;
+        color: grey;
+    }
+
+    .btn2 {
+        width: 100%
+    }
+
+}

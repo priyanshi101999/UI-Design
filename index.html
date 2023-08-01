@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="nav_left"> <img src="assets/logo.png" class="logo">
+            <h1>HOME</h1>
+        </div>
+        <div class="nav_right">
+            <div class="icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-question"></i>
+                <p>Hello <span>Kartik</span></p>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+
+
+        <i class="fas fa-bars fa-2x"></i>
+    </nav>
+
+
+    <!-- main part -->
+    <div class="main">
+        <div class="form_title">
+            <p>Create an Account</p>
+
+            <!-- progress bar -->
+            <div class="progressBar">
+                <span class="step-label" style="color: orangered">Personal Info</span>
+                <span class="step-label">Select Interests</span>
+                <span class="step-label">Find Allies</span>
+                <div class="progress-1">
+
+
+
+                    <div class="dot completed"></div>
+                    <div class="remaining"></div>
+                    <div class="dot_incomplete1"></div>
+                    <div class="dot_incomplete2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_container">
+            <div class="image_container">
+                <img src="assets/heroImage.jpg" alt="">
+                <div class="image-text">
+                    <h2>Your Text Here</h2>
+                    <p>More text can go here...</p>
+                </div>
+            </div>
+
+
+            <div class="form_container">
+                <h1>PERSONAL INFORMATION</h1>
+                <P>Please provide the following information to further custmization ally28 profile</P>
+                <div class="upload_image">
+
+                    <div class="profile_image"> <i class="fas fa-user-circle user-profile"></i></div>
+                    <p>Upload a Profile Picture<span>
+                            (optional)
+                        </span></p>
+                </div>
+
+
+                <!-- form start -->
+                <div class="container">
+                    <form class="row mt-5 d-flex flex-column">
+                        <div class="mb-3 col-sm-8 col-12">
+                            <label for="exampleFormControlInput1" class="form-label">Job Title</label>
+                            <input type="email" class="form-control job_title" id="exampleFormControlInput1">
+                        </div>
+
+                        <div class="mb-3 col-sm-4 col-12">
+                            <label for="exampleFormControlInput1" class="form-label">Year of Experience</label>
+                            <input type="text" class="form-control experience" id="exampleFormControlInput1">
+                        </div>
+
+
+                        <div class="mb-3 col-sm-6 col-12">
+                            <label for="exampleFormControlTextarea1" class="form-label">Industry</label>
+                            <select class="form-select" aria-label="Disabled select example">
+                                <option selected>Select Industry</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-12">
+                            <label for="exampleFormControlTextarea1" class="form-label">Resume</label>
+                            <select class="form-select" aria-label="Disabled select example">
+                                <option selected>Select Resume</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-12">
+                            <label for="exampleFormControlInput1" class="form-label">Year of Experience</label>
+                            <input type="text" class="form-control experience" id="exampleFormControlInput1">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-12">
+                            <label for="exampleFormControlInput1" class="form-label">Year of Experience</label>
+                            <input type="text" class="form-control experience" id="exampleFormControlInput1">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-12">
+                            <label for="exampleFormControlInput1" class="form-label">Year of Experience</label>
+                            <input type="text" class="form-control experience" id="exampleFormControlInput1">
+                        </div>
+                        <div class="hide mt-4 col-12">
+                            <div class="col-sm-8 ">
+                                <h5>Hide your Distance</h5>
+                                <p class="mb-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia
+                                    quisquam enim!
+                                </p>
+
+                               
+                            </div>
+
+
+
+                            <label class="toggle-btn col-4">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <button class="btn px-5 btn2 " type="button">SAVE & CONTINUE</button>
+                    </form>
+
+                </div>
+
+                <!-- form ends -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
